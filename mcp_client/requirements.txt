@@ -1,0 +1,9 @@
+# Core — always needed
+mcp>=1.0
+python-dotenv>=1.0         # optional but recommended: auto-loads .env file
+
+# LLM providers — install only the one(s) you use
+groq>=1.0                  # --provider groq  (free tier)
+# anthropic>=0.40          # --provider claude
+# google-generativeai>=0.8 # --provider gemini  (free tier)
+# openai>=1.0              # --provider openai  (or any OpenAI-compatible API)

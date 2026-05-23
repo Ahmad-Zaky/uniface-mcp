@@ -1,0 +1,33 @@
+# Copy this file to .env and fill in your key(s).
+# Never commit .env — it is listed in .gitignore.
+#
+# The client auto-detects which provider to use based on which key is set.
+# Priority order: Groq → Claude → Gemini → OpenAI
+# Override with:  python mcp_client/client.py --provider groq
+
+# ── LLM providers ──────────────────────────────────────────────────────
+# Pick ONE (or set multiple and use --provider to choose).
+
+# Groq — free, no credit card — https://console.groq.com → API Keys
+GROQ_API_KEY=gsk_xxxxxxxxxxxxxxxxxxxx
+
+# Gemini — free, no credit card — https://aistudio.google.com/app/apikey
+# GEMINI_API_KEY=AIza_xxxxxxxxxxxxxxxxxxxx
+
+# Claude — https://console.anthropic.com
+# ANTHROPIC_API_KEY=sk-ant-xxxxxxxxxxxxxxxxxxxx
+
+# OpenAI — https://platform.openai.com/api-keys
+# OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxx
+
+# ── Model overrides (optional) ─────────────────────────────────────────
+# Uncomment to use a different model than the default.
+
+# GROQ_MODEL=llama-3.1-8b-instant        # lighter/faster (default: llama-3.3-70b-versatile)
+# CLAUDE_MODEL=claude-haiku-4-5-20251001 # cheapest Claude (default: claude-sonnet-4-6)
+# GEMINI_MODEL=gemini-1.5-flash          # (this is already the default)
+# OPENAI_MODEL=gpt-4o-mini               # cheaper OpenAI option (default: gpt-4o)
+
+# ── OpenAI-compatible endpoints (Ollama, Together, etc.) ───────────────
+# OPENAI_BASE_URL=http://localhost:11434/v1
+# OPENAI_MODEL=llama3.2
